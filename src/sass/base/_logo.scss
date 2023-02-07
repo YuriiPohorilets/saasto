@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.logo__icon {
+  margin-right: 10px;
+
+  width: 30px;
+  height: 30px;
+}
+
+.logo__text {
+  font-family: getFont(secondary);
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 40px;
+  color: getColor(logo);
+}

@@ -1,0 +1,52 @@
+$colors: (
+  'accent': #ff553e,
+  'primary': #404040,
+  'secondary': #18063c,
+
+  'bg-action': #fff8f2,
+  'bg-primary': #ffffff,
+  'bg-secondary': #f3fdfe,
+
+  'active-white': #ffffff,
+
+  'logo': #332c5c,
+
+  'features-1st': #70d0dc,
+  'features-2st': #7562e0,
+  'features-3st': #fa865f,
+
+  'benefits-1st': #fa855c,
+  'benefits-2st': #7ad6e1,
+  'benefits-3st': #ffc954,
+
+  'about-1st': #5bc17f,
+  'about-2st': #fe6292,
+  'about-3st': #6b72ff,
+);
+
+$shadows: (
+  'feauters-img': 14px 20px 48px rgba(25, 15, 44, 0.06),
+);
+
+$fonts: (
+  'primary': (
+    'Inter',
+    sans-serif,
+  ),
+  'secondary': (
+    'Poppins',
+    sans-serif,
+  ),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+@function getShadow($key) {
+  @return map-get($shadows, $key);
+}
+
+@function getFont($key) {
+  @return map-get($fonts, $key);
+}

@@ -1,0 +1,11 @@
+.header {
+  padding: 28px 0;
+
+  background-color: getColor(bg-action);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
