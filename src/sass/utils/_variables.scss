@@ -39,6 +39,12 @@ $fonts: (
   ),
 );
 
+$properties: (
+  'fn': ease-in-out,
+  'duration': 300ms,
+  'delay': 300ms,
+);
+
 @function getColor($key) {
   @return map-get($colors, $key);
 }
@@ -49,4 +55,8 @@ $fonts: (
 
 @function getFont($key) {
   @return map-get($fonts, $key);
+}
+
+@function getProp($key) {
+  @return map-get($properties, $key);
 }

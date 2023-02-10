@@ -1,0 +1,93 @@
+.products__subtitle {
+  margin-bottom: 10px;
+}
+
+.products__description {
+  margin-bottom: 16px;
+}
+
+.products__label {
+  margin-bottom: 40px;
+  display: block;
+
+  font-family: getFont(secondary);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+  text-align: center;
+}
+
+.products__list {
+  @extend %list;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.products__item {
+  padding: 36px 26px;
+
+  text-align: center;
+
+  border: 1px solid getColor(accent);
+  border-radius: 30px;
+
+  &:nth-of-type(2) {
+    background-color: getColor(accent);
+
+    & * {
+      color: getColor(active-white);
+    }
+
+    & .products__btn {
+      color: getColor(accent);
+      background-color: getColor(active-white);
+    }
+  }
+}
+
+.products__name {
+  margin-bottom: 29px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.products__services {
+  @extend %list;
+
+  margin-bottom: 30px;
+}
+
+.products__elem {
+  font-size: 18px;
+  line-height: 1.11;
+  color: getColor(accent);
+
+  opacity: 0.8;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.products__price {
+  margin-bottom: 30px;
+}
+
+.products__cost {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.products__term {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.56;
+
+  opacity: 0.4;
+}

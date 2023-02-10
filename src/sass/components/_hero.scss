@@ -1,0 +1,14 @@
+.hero {
+  padding-top: 47px;
+  padding-bottom: 85px;
+
+  background-color: getColor(bg-action);
+}
+
+.hero__title {
+  margin-bottom: 12px;
+}
+
+.hero__description {
+  margin-bottom: 40px;
+}

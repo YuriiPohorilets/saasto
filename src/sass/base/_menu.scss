@@ -1,12 +1,16 @@
 .menu {
   position: relative;
+  z-index: 2;
 
   width: 30px;
   height: 24px;
 
-  transition: all 300ms ease-in-out;
+  transition: transform getProp(duration) getProp(fn);
 
+  background-color: transparent;
+  border: none;
   overflow: hidden;
+
   cursor: pointer;
 
   &::before {
@@ -22,7 +26,7 @@
     background-color: getColor(accent);
     border-radius: 4px;
 
-    transition: all 300ms 300ms ease-in-out;
+    transition: transform getProp(duration) getProp(delay) getProp(fn);
   }
 
   &::after {
@@ -38,7 +42,7 @@
     background-color: getColor(accent);
     border-radius: 4px;
 
-    transition: all 300ms 300ms ease-in-out;
+    transition: transform getProp(duration) getProp(delay) getProp(fn);
   }
 
   &.is-open {
@@ -56,6 +60,11 @@
       transform: translateX(120%);
     }
   }
+
+  // &:hover > .menu__item,
+  // &:focus > .menu__item {
+  //   transform: translateY(-50%) scale(0.8);
+  // }
 }
 
 .menu__item {
@@ -72,5 +81,5 @@
   background-color: getColor(accent);
   border-radius: 4px;
 
-  transition: all 300ms 200ms ease-in-out;
+  transition: transform getProp(duration) getProp(delay) getProp(fn);
 }
