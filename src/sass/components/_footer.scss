@@ -1,0 +1,39 @@
+.footer {
+  padding: 40px 0;
+}
+
+.logo--footer {
+  margin-bottom: 46px;
+}
+
+.social {
+  @extend %list;
+  margin-bottom: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 44px;
+}
+
+.social__link {
+  @extend %link;
+}
+
+.footer__wrapper--copy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__terms,
+.footer__policy,
+.footer__copy {
+  @extend %link;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: getColor(primary);
+
+  opacity: 0.5;
+}

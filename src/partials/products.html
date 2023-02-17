@@ -3,11 +3,16 @@
     <h2 class="products__subtitle subtitle">Flexible work, Simple Price</h2>
     <p class="products__description description">Growth your business with using us</p>
 
-    <label class="products__label">
-      Monthly
-      <input class="products__checkbox" type="checkbox" name="term" id="term" />
-      Yearly
-    </label>
+    <div class="switch">
+      <span class="switch__case">Monthly</span>
+
+      <div class="switch__wrapper">
+        <input class="switch__checkbox" type="checkbox" name="switch" id="switch" />
+        <label class="switch__label" for="switch"></label>
+      </div>
+
+      <span class="switch__case">Yearly</span>
+    </div>
 
     <ul class="products__list">
       <li class="products__item">

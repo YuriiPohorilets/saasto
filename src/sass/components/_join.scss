@@ -1,0 +1,29 @@
+.join {
+  background-color: getColor(bg-action);
+}
+
+.join__subtitle {
+  margin-bottom: 16px;
+}
+
+.join__description {
+  margin-bottom: 30px;
+}
+
+.join__list {
+  @extend %list;
+}
+
+.join__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.join__link {
+  @extend %link;
+
+  &.btn--light {
+    background-color: transparent;
+  }
+}

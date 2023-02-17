@@ -1,0 +1,51 @@
+.clients__wrapper--content {
+  margin-bottom: 40px;
+}
+
+.clients__subtitle {
+  margin-bottom: 18px;
+}
+
+.clients__description {
+  margin-bottom: 28px;
+}
+
+.clients__list {
+  @extend %list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.clients__item {
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  &:nth-child(1) {
+    background-color: getColor(clients-1st);
+  }
+
+  &:nth-child(2) {
+    background-color: getColor(clients-2st);
+  }
+
+  &:nth-child(3) {
+    background-color: getColor(clients-3st);
+  }
+
+  &:nth-child(4) {
+    background-color: getColor(clients-4st);
+  }
+}
+
+.clients__link {
+  @extend %link;
+}

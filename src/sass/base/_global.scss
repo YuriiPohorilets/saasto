@@ -85,8 +85,15 @@ img {
   color: getColor(active-white);
 
   background-color: getColor(accent);
-  border: none;
+  border: 1px solid transparent;
   border-radius: 40px;
+
+  &--light {
+    color: getColor(accent);
+
+    background-color: getColor(active-white);
+    border: 1px solid getColor(accent);
+  }
 }
 
 button.btn {
@@ -94,6 +101,6 @@ button.btn {
 }
 
 a.btn {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }

@@ -6,8 +6,22 @@
   margin-bottom: 16px;
 }
 
-.products__label {
+.switch {
   margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch__wrapper {
+  margin: 0 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.switch__case {
   display: block;
 
   font-family: getFont(secondary);
@@ -15,6 +29,49 @@
   font-size: 18px;
   line-height: 1.56;
   text-align: center;
+}
+
+.switch__checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+
+  &:checked + .switch__label {
+    background-color: rgba(255, 85, 62, 0.2);
+  }
+
+  &:checked + .switch__label:after {
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+  }
+}
+
+.switch__label {
+  position: relative;
+
+  display: block;
+  width: 55px;
+  height: 26px;
+
+  background-color: rgba(255, 85, 62, 0.2);
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: getColor(accent);
+    border-radius: 50%;
+
+    transition: all getProp(duration) getProp(fn);
+  }
 }
 
 .products__list {
