@@ -15,6 +15,9 @@
 }
 
 .join__item {
+  // width: 180px;
+  // height: 73px;
+
   &:not(:last-child) {
     margin-bottom: 16px;
   }
@@ -23,7 +26,18 @@
 .join__link {
   @extend %link;
 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   &.btn--light {
     background-color: transparent;
   }
+}
+
+.join__icon {
+  width: 115px;
+  height: 27px;
+
+  fill: currentColor;
 }
