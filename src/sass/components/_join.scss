@@ -1,5 +1,9 @@
 .join {
+  position: relative;
+
   background-color: getColor(bg-action);
+
+  overflow: hidden;
 }
 
 .join__subtitle {
@@ -15,9 +19,6 @@
 }
 
 .join__item {
-  // width: 180px;
-  // height: 73px;
-
   &:not(:last-child) {
     margin-bottom: 16px;
   }
@@ -40,4 +41,17 @@
   height: 27px;
 
   fill: currentColor;
+}
+
+.join__wrapper--img {
+  display: none;
+}
+
+.join__img {
+  position: absolute;
+  bottom: 145px;
+  right: -57px;
+
+  width: 176px;
+  height: 60px;
 }

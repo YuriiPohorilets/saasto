@@ -62,6 +62,10 @@
   font-size: 24px;
   line-height: 1.33;
   color: getColor(secondary);
+
+  &--current {
+    color: getColor(accent);
+  }
 }
 
 .auth {
@@ -75,6 +79,8 @@
 
 .auth__btn {
   padding: 16px 32px;
+
+  display: inline-block;
 
   &--transparent {
     color: getColor(accent);

@@ -1,4 +1,6 @@
 .hero {
+  position: relative;
+
   padding-top: 47px;
   padding-bottom: 85px;
 
@@ -11,4 +13,13 @@
 
 .hero__description {
   margin-bottom: 40px;
+}
+
+.hero__img {
+  position: absolute;
+  top: 18px;
+  right: 60px;
+
+  width: 65px;
+  height: 76px;
 }

@@ -1,3 +1,9 @@
+.reviews {
+  position: relative;
+
+  overflow: hidden;
+}
+
 .reviews__subtitle {
   margin-bottom: 30px;
 }
@@ -61,4 +67,24 @@
 
 .swiper-pagination-bullet-active {
   width: 26px;
+}
+
+.reviews__img {
+  position: absolute;
+
+  &--like {
+    top: 87px;
+    right: 124px;
+
+    width: 62px;
+    height: 63px;
+  }
+
+  &--chat {
+    top: 136px;
+    right: -15px;
+
+    width: 79px;
+    height: 81px;
+  }
 }

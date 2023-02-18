@@ -1,5 +1,11 @@
 .about {
+  position: relative;
+
   background-color: getColor(bg-secondary);
+}
+
+.about__wrapper--content {
+  margin-bottom: 48px;
 }
 
 .about__subtitle {
@@ -66,4 +72,27 @@
   line-height: 1.8;
 
   opacity: 0.8;
+}
+
+.about__img {
+  position: absolute;
+  top: -30px;
+  right: 0;
+
+  width: 103px;
+  height: 104px;
+}
+
+.about__wrapper--img {
+  display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 45px;
+}
+
+.about__graph {
+  margin: 0 auto;
+
+  border-radius: 20px;
+  box-shadow: 0px 32px 54px rgba(65, 74, 85, 0.05);
 }
