@@ -1,13 +1,39 @@
+.clients__container {
+  @include bpoint(desktop) {
+    display: flex;
+  }
+}
+
+.clients__wrapper {
+  @include bpoint(desktop) {
+    flex-basis: 50%;
+  }
+}
+
 .clients__wrapper--content {
   margin-bottom: 40px;
+
+  @include bpoint(desktop) {
+    order: 1;
+  }
 }
 
 .clients__subtitle {
   margin-bottom: 18px;
+
+  @include bpoint(desktop) {
+    margin-bottom: 24px;
+  }
 }
 
 .clients__description {
   margin-bottom: 28px;
+
+  @include bpoint(desktop) {
+    margin-bottom: 48px;
+
+    text-align: start;
+  }
 }
 
 .clients__list {
@@ -17,6 +43,11 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
+
+  @include bpoint(desktop) {
+    justify-content: flex-start;
+    gap: 36px;
+  }
 }
 
 .clients__item {
@@ -28,6 +59,13 @@
   justify-content: center;
 
   border-radius: 10px;
+
+  @include bpoint(desktop) {
+    width: 240px;
+    height: 152px;
+
+    border-radius: 48px;
+  }
 
   &:nth-child(1) {
     background-color: getColor(clients-1st);

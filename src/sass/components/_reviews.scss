@@ -6,10 +6,21 @@
 
 .reviews__subtitle {
   margin-bottom: 30px;
+
+  @include bpoint(desktop) {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
 }
 
 .reviews__description {
   display: none;
+
+  @include bpoint(desktop) {
+    margin-bottom: 60px;
+    display: block;
+  }
 }
 
 .slider {
@@ -22,6 +33,12 @@
 .slider__item {
   display: flex;
   flex-direction: column;
+
+  @include bpoint(desktop) {
+    flex-direction: row;
+    align-items: center;
+    gap: 48px;
+  }
 }
 
 .slider__img {
@@ -33,6 +50,14 @@
   background-color: getColor(bg-action);
   border-radius: 40px;
   object-fit: cover;
+
+  @include bpoint(desktop) {
+    margin-bottom: 0;
+    width: 298px;
+    height: 379px;
+
+    border-radius: 370px;
+  }
 }
 
 .slider__quote {
@@ -42,6 +67,12 @@
   line-height: 1.8;
 
   opacity: 0.8;
+
+  @include bpoint(desktop) {
+    margin-bottom: 36px;
+
+    font-size: 20px;
+  }
 }
 
 .slider__name {
@@ -50,6 +81,13 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+
+  @include bpoint(desktop) {
+    margin-bottom: 16px;
+
+    font-style: 24px;
+    line-height: 1;
+  }
 }
 
 .slider__position {
@@ -58,6 +96,11 @@
   line-height: 1.62;
 
   opacity: 0.7;
+
+  @include bpoint(desktop) {
+    font-style: 18px;
+    line-height: 1.44;
+  }
 }
 
 .swiper-pagination-bullet {
