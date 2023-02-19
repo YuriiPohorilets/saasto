@@ -32,6 +32,10 @@ img {
 
 .section {
   padding: 40px 0;
+
+  @include bpoint(desktop) {
+    padding: 140px 0;
+  }
 }
 
 .hidden {
@@ -56,6 +60,12 @@ img {
   font-size: 28px;
   line-height: 1.6;
   text-transform: capitalize;
+
+  @include bpoint(desktop) {
+    font-size: 64px;
+    line-height: 1.41;
+    text-align: center;
+  }
 }
 
 .subtitle {
@@ -66,6 +76,11 @@ img {
   text-transform: capitalize;
 
   color: getColor(secondary);
+
+  @include bpoint(desktop) {
+    font-size: 48px;
+    line-height: 1.46;
+  }
 }
 
 .description {
@@ -73,6 +88,12 @@ img {
   line-height: 2.25;
 
   opacity: 0.8;
+
+  @include bpoint(desktop) {
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+  }
 }
 
 .btn {

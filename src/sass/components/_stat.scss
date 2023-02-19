@@ -12,6 +12,11 @@
   align-items: center;
   justify-content: center;
   gap: 96px;
+
+  @include bpoint(desktop) {
+    flex-direction: row;
+    gap: 180px;
+  }
 }
 
 .stat__item {
@@ -33,6 +38,10 @@
     background-color: getColor(primary);
 
     opacity: 0.6;
+
+    @include bpoint(desktop) {
+      display: none;
+    }
   }
 }
 
@@ -44,6 +53,11 @@
   font-size: 64px;
   line-height: 1;
   color: getColor(secondary);
+
+  @include bpoint(desktop) {
+    font-size: 48px;
+    line-height: 1.33;
+  }
 }
 
 .stat__text {

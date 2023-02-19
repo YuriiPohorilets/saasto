@@ -46,14 +46,6 @@
   }
 }
 
-.clients__link {
-  @extend %link;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .clients__icon {
   width: 64px;
   height: 64px;

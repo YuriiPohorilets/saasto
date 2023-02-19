@@ -5,14 +5,36 @@
   padding-bottom: 85px;
 
   background-color: getColor(bg-action);
+
+  @include bpoint(desktop) {
+    padding: 180px 0;
+  }
 }
 
 .hero__title {
   margin-bottom: 12px;
+
+  @include bpoint(desktop) {
+    margin-bottom: 24px;
+  }
 }
 
 .hero__description {
   margin-bottom: 40px;
+
+  @include bpoint(desktop) {
+    margin-bottom: 68px;
+
+    font-size: 20px;
+    line-height: 1.8;
+  }
+}
+
+.hero__btn {
+  @include bpoint(desktop) {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .hero__img {

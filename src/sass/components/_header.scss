@@ -4,6 +4,10 @@
   background-color: getColor(bg-action);
 
   overflow: hidden;
+
+  @include bpoint(desktop) {
+    padding: 40px 0;
+  }
 }
 
 .header__container {
@@ -37,13 +41,30 @@
   transform: translateX(-200%);
 
   transition: all 300ms ease-in-out;
+
+  @include bpoint(desktop) {
+    position: static;
+
+    margin-left: 211px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    flex-direction: row;
+    background-color: transparent;
+
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
 }
 
 .menu.is-open + .nav {
+  transform: translateX(0px);
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-  transform: translateX(0px);
 }
 
 .nav__list {
@@ -53,6 +74,11 @@
   flex-direction: column;
   align-items: center;
   gap: 35px;
+
+  @include bpoint(desktop) {
+    flex-direction: row;
+    gap: 48px;
+  }
 }
 
 .nav__link {
@@ -65,6 +91,10 @@
 
   &--current {
     color: getColor(accent);
+  }
+
+  @include bpoint(desktop) {
+    font-size: 18px;
   }
 }
 

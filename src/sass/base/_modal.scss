@@ -1,0 +1,89 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: getColor(overlay);
+
+  &.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(0);
+  }
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 40px;
+  max-width: 600px;
+  max-width: 90vw;
+  max-height: 98vh;
+
+  background-color: getColor(modal);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+
+  overflow-y: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__label {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form__input {
+  margin-bottom: 35px;
+  padding: 8px;
+  width: 100%;
+
+  font-size: 16px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  & > svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

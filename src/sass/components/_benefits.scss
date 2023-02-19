@@ -1,3 +1,15 @@
+.benefits__container {
+  @include bpoint(desktop) {
+    display: flex;
+  }
+}
+
+.benefits__wrapper {
+  @include bpoint(desktop) {
+    flex-basis: 50%;
+  }
+}
+
 .benefits__wrapper--img {
   position: relative;
 
@@ -14,12 +26,10 @@
 
   transform: translateY(-50%);
 
-  width: 80vw;
+  width: 80%;
   height: 253px;
 
   background-color: getColor(bg-action);
-  // background-color: red;
-
   border-radius: 0 20px 20px 0;
 }
 
@@ -78,12 +88,23 @@
 
 .benefits__subtitle {
   margin-bottom: 16px;
+
+  @include bpoint(desktop) {
+    margin-bottom: 20px;
+  }
 }
 
 .benefits__description {
   margin-bottom: 36px;
 
   line-height: 1.8;
+
+  @include bpoint(desktop) {
+    margin-bottom: 48px;
+
+    line-height: 2;
+    text-align: start;
+  }
 }
 
 .benefits__list {
@@ -94,10 +115,12 @@
   display: flex;
   align-items: flex-start;
 
-  font-size: 15px;
-
   &:not(:last-child) {
     margin-bottom: 24px;
+
+    @include bpoint(desktop) {
+      margin-bottom: 48px;
+    }
   }
 
   &:nth-child(1) > .benefits__icon {
@@ -125,9 +148,19 @@
 
   border-radius: 10px;
 
+  @include bpoint(desktop) {
+    width: 88px;
+    height: 88px;
+  }
+
   & > svg {
     width: 31px;
     height: 31px;
+
+    @include bpoint(desktop) {
+      width: 48px;
+      height: 48px;
+    }
   }
 }
 
@@ -138,6 +171,11 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
+
+  @include bpoint(desktop) {
+    font-size: 28px;
+    line-height: 1.29;
+  }
 }
 
 .benefits__text {
@@ -145,4 +183,9 @@
   line-height: 1.8;
 
   opacity: 0.8;
+
+  @include bpoint(desktop) {
+    font-size: 18px;
+    line-height: 2;
+  }
 }
